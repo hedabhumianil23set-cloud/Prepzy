@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_prepzy"
+    tools:context=".CuisineFilterActivity">
+
+    <!-- Scrollable Main Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNav"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Logo + Title -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="PREPZY"
+                    android:fontFamily="@font/moresugar_regular"
+                    android:textColor="#0E4D2B"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Search bar -->
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/search_bar_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Add"
+                    android:src="@drawable/ic_add" />
+
+                <EditText
+                    android:id="@+id/searchBar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Add or search ingredients and recipes"
+                    android:inputType="text"
+                    android:textColor="#0E4D2B"
+                    android:textColorHint="#777" />
+            </LinearLayout>
+
+            <!-- Rounded Background Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/verification_card_bg"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_marginTop="55dp"
+                android:gravity="center_horizontal">
+
+                <!-- Title Inside the Card -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cuisine Filter"
+                    android:textColor="#2A5C3E"
+                    android:fontFamily="@font/moresugar_regular"
+                    android:textStyle="bold"
+                    android:textSize="45sp"
+                    android:layout_marginBottom="20dp"/>
+
+                <!-- Grid for Filter Buttons -->
+
+                <!-- Reset and Apply Buttons -->
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="2"
+                    android:columnOrderPreserved="false"
+                    android:rowOrderPreserved="false"
+                    android:useDefaultMargins="true">
+
+                    <!-- Filter Buttons -->
+                    <Button
+                        style="@style/FilterButtonStyle"
+                        android:layout_width="151dp"
+                        android:text="Indian" />
+
+                    <Button
+                        style="@style/FilterButtonStyle"
+                        android:layout_width="143dp"
+                        android:text="Italian" />
+
+                    <Button
+                        style="@style/FilterButtonStyle"
+                        android:layout_width="151dp"
+                        android:text="Chinese" />
+
+                    <Button
+                        style="@style/FilterButtonStyle"
+                        android:layout_width="143dp"
+                        android:text="Mexican" />
+
+                    <Button
+                        style="@style/FilterButtonStyle"
+                        android:layout_width="151dp"
+                        android:text="French" />
+
+                    <Button
+                        style="@style/FilterButtonStyle"
+                        android:layout_width="143dp"
+                        android:text="Japanese" />
+
+                    <Button
+                        style="@style/FilterButtonStyle"
+                        android:layout_width="151dp"
+                        android:text="Thai" />
+
+                    <Button
+                        style="@style/FilterButtonStyle"
+                        android:layout_width="143dp"
+                        android:text="Korean" />
+
+                    <Button
+                        style="@style/FilterButtonStyle"
+                        android:layout_width="151dp"
+                        android:text="Turkish" />
+
+                    <Button
+                        style="@style/FilterButtonStyle"
+                        android:layout_width="143dp"
+                        android:text="American" />
+                </GridLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="25dp">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Reset"
+                        android:background="@drawable/darkgreen_rounded_button"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginEnd="8dp"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Apply Filters"
+                        android:background="@drawable/darkgreen_rounded_button"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Add Some Bottom Spacing -->
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:background="#AFD1BF"
+        android:gravity="center"
+        android:weightSum="3"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/homeBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_home"
+            android:contentDescription="Home"
+            android:scaleType="centerInside" />
+
+        <ImageButton
+            android:id="@+id/bookmarkBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_bookmark"
+            android:contentDescription="Bookmarks"
+            android:scaleType="centerInside" />
+
+        <ImageButton
+            android:id="@+id/profileBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_profile"
+            android:contentDescription="Profile"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+
+</RelativeLayout>

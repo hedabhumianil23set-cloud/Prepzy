@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/login"
+    tools:context=".LoginActivity"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:paddingTop="160dp">   <!-- added extra top padding -->
+
+        <!-- App Name -->
+
+        <!-- Sign Up title -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="290dp"
+            android:text="Login"
+            android:textColor="#1F4534"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="26.5sp"
+            android:textStyle="bold" />
+
+        <!-- Username -->
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/white_rounded_box"
+            android:hint="Enter your username"
+            android:paddingStart="20dp"
+            android:textColor="#1F4534"
+            android:textColorHint="#7AA88A"
+            android:textSize="16sp" />
+
+        <!-- Email -->
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/white_rounded_box"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:paddingStart="20dp"
+            android:textColor="#1F4534"
+            android:textColorHint="#7AA88A"
+            android:textSize="16sp" />
+
+        <!-- Sign Up Button -->
+
+        <!-- Already have account -->
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/darkgreen_rounded_button"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCreateAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:text="Forgot Password"
+            android:textColor="#1B5E20"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? "
+            android:textColor="#1F4534"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textColor="#1B5E20"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

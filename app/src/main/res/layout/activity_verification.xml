@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_activation"
+    android:fillViewport="true"
+    tools:context=".VerificationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="32dp">
+
+        <!-- App Title -->
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/moresugar_regular"
+            android:text="PREPZY"
+            android:textColor="#2A5C3E"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:background="@drawable/verification_card_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Heading -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/moresugar_regular"
+                android:lineSpacingExtra="2dp"
+                android:text="account verification"
+                android:textAlignment="center"
+                android:textColor="#2A5C3E"
+                android:textSize="18sp" />
+
+            <!-- Subtext -->
+            <TextView
+                android:id="@+id/subtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/poppins_extra_bold"
+                android:text="@string/
+                verification_subtext"
+                android:textAlignment="center"
+                android:textColor="#555"
+                android:textSize="13sp" />
+
+            <!-- OTP Boxes -->
+            <LinearLayout
+                android:id="@+id/otpLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/otp1"
+                    android:autofillHints="oneTimeCode"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/bg_otp_box"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:padding="10dp"
+                    android:textColor="#2A5C3E"
+                    android:textSize="18sp"
+                    android:cursorVisible="true"
+                    android:textAlignment="center" />
+
+
+                <EditText
+                    android:id="@+id/otp2"
+                    android:autofillHints="oneTimeCode"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/bg_otp_box"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:padding="10dp"
+                    android:textColor="#2A5C3E"
+                    android:textSize="18sp"
+                    android:cursorVisible="true"
+                    android:textAlignment="center" />
+
+
+                <EditText
+                    android:id="@+id/otp3"
+                    android:autofillHints="oneTimeCode"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/bg_otp_box"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:padding="10dp"
+                    android:textColor="#2A5C3E"
+                    android:textSize="18sp"
+                    android:cursorVisible="true"
+                    android:textAlignment="center" />
+
+
+                <EditText
+                    android:id="@+id/otp4"
+                    android:autofillHints="oneTimeCode"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/bg_otp_box"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:padding="10dp"
+                    android:textColor="#2A5C3E"
+                    android:textSize="18sp"
+                    android:cursorVisible="true"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+
+            <!-- Resend Code -->
+            <TextView
+                android:id="@+id/resendCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/resend_code"
+                android:textColor="#2A5C3E"
+                android:textSize="18sp" />
+
+            <!-- Verify Button -->
+            <Button
+                android:id="@+id/verifyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/darkgreen_rounded_button"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/verify"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+

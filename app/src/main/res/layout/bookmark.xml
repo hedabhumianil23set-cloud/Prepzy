@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#cbdcd6">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saved Recipes"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#0C6635"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Empty state (shows when no bookmarks) -->
+    <TextView
+        android:id="@+id/tvEmptyMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You haven't saved any recipes yet."
+        android:textColor="#7A7A7A"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:paddingTop="40dp" />
+</LinearLayout>
